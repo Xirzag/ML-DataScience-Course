@@ -1,0 +1,52 @@
+<html>
+
+<head>
+
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif
+        }
+
+        h1 {
+            /*
+            change the text to white and add a padding of 5px            
+            */    
+            background-color: #2a5599;
+            color: white;
+            padding: 5px
+            
+        }
+        svg{
+            /*
+            Add code to show a black border of 1px around all SVGs elements in the page
+            
+            */
+            border: 1px solid black;
+        }
+        
+        .mainView{
+            /*
+            - Use the "display flex" feature from to show the items from class `mainView` side by side 
+            */
+            display: flex;
+        }
+        
+    </style>
+    <script src="https://d3js.org/d3.v5.min.js"></script> <!-- Add this line to your file -->
+</head>
+
+<body>
+    <h1>Airlines Routes</h1>
+    <div class="mainView">
+        <div>
+            <h2>Airlines</h2>
+            <svg id="AirlinesChart"></svg>
+        </div>
+        <div>
+            <h2>Airports</h2>
+            <svg id="Map"></svg>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
